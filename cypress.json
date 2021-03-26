@@ -1,4 +1,13 @@
 {
   "baseUrl": "http://localhost:3000",
-  "video": false
+  "video": false,
+  "integrationFolder": "cypress/integration/linkedin",
+  "env": {
+    "searchUrl": "https://www.linkedin.com/search/results/people/?keywords=%22UX%20designer%22%20freelance&origin=GLOBAL_SEARCH_HEADER&page=2"
+  },
+  "reporterOptions": {
+    "overwrite": false,
+    "html": true,
+    "json": false
+  }
 }

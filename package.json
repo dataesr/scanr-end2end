@@ -7,11 +7,21 @@
   "license": "MIT",
   "private": false,
   "scripts": {
+    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "test:cli": "npm run delete:reportFolder && cypress run",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "npm run merge:reports && marge --reportDir TestReport cypress-combined-report.json",
     "cy:open": "yarn run cypress open",
     "cy:run": "yarn run cypress run",
     "cy:firefox": "yarn run cypress run --browser firefox"
   },
   "dependencies": {
     "cypress": "^6.6.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
   }
 }
