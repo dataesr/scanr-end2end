@@ -33,3 +33,6 @@ jobs:
         env:
           HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
           SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
+      - name: Notify in slack
+      run: |
+        curl -X POST -H 'Content-type: application/json' --data '{"text":"Everything is under control on ScanR production"}' ${{ secrets.SLACK_WEBHOOK }}
