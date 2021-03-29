@@ -34,6 +34,6 @@ jobs:
         pip install -r requirements.txt
     - name: Clean contribution production
       run: python ./clean-contrib-publi.py
-        env:
-          HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
-          SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
+      env:
+        HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
+        SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
