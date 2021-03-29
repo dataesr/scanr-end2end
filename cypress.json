@@ -1,4 +1,7 @@
 {
-  "baseUrl": "http://localhost:3000",
-  "video": false
+  "baseUrl": "https://scanr.enseignementsup-recherche.gouv.fr",
+  "video": false,
+  "env": {
+    "personId": "idref030959829"
+  }
 }

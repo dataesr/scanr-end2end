@@ -1,5 +1,21 @@
+# NPM
 /node_modules
+package-lock.json
 
+# IDE
 .idea
 
-package-lock.json
+
+# Cypress
+/cypress/fixtures
+/cypress/screenshots
+/cypress/plugins
+/cypress/support
+
+# Env
+.env
+
+# Python
+/bin
+/lib
+pyvenv.cfg
