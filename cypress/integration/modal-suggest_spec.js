@@ -22,14 +22,4 @@ describe('Modal Suggestion Test', () => {
             expect($checkboxChecked).to.have.length(1);
         });
     });
-
-    it('Contributes a publication', () => {
-        cy.get('#Production .fa-plus-square').click();
-        cy.get('.ReactModal__Content .fa-square').eq(2).click();
-        cy.contains('Valider').click();
-        cy.get('#email').type('test@endtoend.com');
-        cy.get('#message').type('Message test!');
-        cy.contains('Envoyer').click();
-        cy.get('.alert-dark span').should('contain.text', 'Merci pour vos contributions');
-    });
 });

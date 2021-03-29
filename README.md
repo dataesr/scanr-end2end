@@ -12,6 +12,11 @@
 $ yarn run cy:open
 ```
 
+## Tests
+### Modal contributions
+
+`idref` of the page tested is setted in cypress.json
+
 ## Clean contributions done with test@endtoend.com
 
 > .env file must contain variables HEADERS_AUTH_BASIC and SCANR_API_URL_CONTRIBUTE
