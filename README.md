@@ -18,7 +18,7 @@ $ yarn run cy:firefox
 
 ## List of Tests
 
-By default url points to production is defined in `cypress.json` as `baseUrl`
+By default url points to production. This is defined in `cypress.json` as `baseUrl`
 
 ### Homepage load 
 
@@ -26,13 +26,14 @@ Main title is checked in en_en browser
 
 ### Modal contributions
 
-`idref` of the page tested is setted in cypress.json
+`idref` of the page tested is setted in `cypress.json`
 
 ## Clean contributions done with test@endtoend.com
 
-> .env file must contain variables HEADERS_AUTH_BASIC and SCANR_API_URL_CONTRIBUTE
+:warning: To launch the script locally .env file must contain variables HEADERS_AUTH_BASIC and SCANR_API_URL_CONTRIBUTE
 
 ```bash
+$ touch .env
 $ python3 -m venv .
 $ source /bin/activate
 $ pip install
