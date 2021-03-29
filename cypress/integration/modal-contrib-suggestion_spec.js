@@ -1,4 +1,4 @@
-describe('Contrib Suggestion Test', () => {
+describe('Modal Contrib Suggestion Test', () => {
     beforeEach(() => {
         cy.visit(`/person/${Cypress.env('personId')}`, {
             onBeforeLoad(win) {
