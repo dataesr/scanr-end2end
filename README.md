@@ -12,6 +12,16 @@
 $ yarn run cy:open
 ```
 
+## Clean contributions done with test@endtoend.com
+
+> .env file must contain variables HEADERS_AUTH_BASIC and SCANR_API_URL_CONTRIBUTE
+
+```bash
+$ python3 -m venv .
+$ source /bin/activate
+$ pip install
+$ python clean-contrib-publi.python
+```
 ## Github Actions
 
 What does workflow main do?
