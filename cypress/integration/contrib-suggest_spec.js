@@ -1,4 +1,4 @@
-describe('Contrib Suggestion', () => {
+describe('Contrib Suggestion Test', () => {
     beforeEach(() => {
         cy.visit(`/person/${Cypress.env('personId')}`, {
             onBeforeLoad(win) {

@@ -8,11 +8,22 @@
 
 ## Usage
 
+### Launch local test
+
+:warning: tests works only with firefox 
+
 ```bash
-$ yarn run cy:open
+$ yarn run cy:firefox
 ```
 
-## Tests
+## List of Tests
+
+By default url points to production is defined in `cypress.json` as `baseUrl`
+
+### Homepage load 
+
+Main title is checked in en_en browser 
+
 ### Modal contributions
 
 `idref` of the page tested is setted in cypress.json
