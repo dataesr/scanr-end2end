@@ -11,6 +11,8 @@ load_dotenv(os.path.join(BASEDIR, '.env'))
 HEADERS = {'Authorization':os.getenv('HEADERS_AUTH_BASIC')}
 SCANR_API_URL = os.getenv('SCANR_API_URL_CONTRIBUTE')
 
+print(f'SCANR_API_URL: {SCANR_API_URL}')
+
 url = str(SCANR_API_URL) + '?max_results=500&where={"email": "test@endtoend.com"}'
 r = requests.get(url, headers=HEADERS)
 data = r.json().get('data')
