@@ -4,12 +4,13 @@ import numpy as np
 import os
 from os.path import join, dirname
 from dotenv import load_dotenv
+from decouple import config
 
 BASEDIR = os.path.abspath(os.path.dirname(__file__))
 load_dotenv(os.path.join(BASEDIR, '.env'))
 
-HEADERS = {'Authorization':os.getenv('HEADERS_AUTH_BASIC')}
-SCANR_API_URL = os.getenv('SCANR_API_URL_CONTRIBUTE')
+HEADERS = {'Authorization':os.getenv('HEADERS_AUTH_BASIC', config('HEADERS_AUTH_BASIC'))}
+SCANR_API_URL = os.getenv('SCANR_API_URL_CONTRIBUTE', config('SCANR_API_URL_CONTRIBUTE'))
 
 print(f'SCANR_API_URL: {SCANR_API_URL}')
 
