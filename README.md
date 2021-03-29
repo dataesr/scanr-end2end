@@ -10,10 +10,10 @@
 
 ### Launch local test
 
-:warning: tests works only with firefox 
+:warning: tests need `chromeWebSecurity` option to work> that is defined in cypress.json 
 
 ```bash
-$ yarn run cy:firefox
+$ yarn run cy:run
 ```
 
 ## List of Tests

@@ -1,6 +1,7 @@
 {
   "baseUrl": "https://scanr.enseignementsup-recherche.gouv.fr",
   "video": false,
+  "chromeWebSecurity": false,
   "env": {
     "personId": "idref030959829"
   }
