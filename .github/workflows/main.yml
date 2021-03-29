@@ -23,17 +23,17 @@ jobs:
 
   clean-test:
     runs-on: ubuntu-latest
-      steps:
-      - name: Set up Python 3.x
-        uses: actions/setup-python@v2
-            with:
-              python-version: '3.x'
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-      - name: Clean contribution production
-        run: python ./clean-contrib-publi.py
-          env:
-            HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
-            SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
+    steps:
+    - name: Set up Python 3.x
+      uses: actions/setup-python@v2
+          with:
+            python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Clean contribution production
+      run: python ./clean-contrib-publi.py
+        env:
+          HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
+          SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
