@@ -33,7 +33,7 @@ jobs:
         env:
           HEADERS_AUTH_BASIC: ${{ secrets.HEADERS_AUTH_BASIC }}
           SCANR_API_URL_CONTRIBUTE: ${{ secrets.SCANR_API_URL_CONTRIBUTE }}
-        if: failure()
       - name: Notify in slack
+        if: failure()
         run: |
           curl -X POST -H 'Content-type: application/json' --data '{"text":"Something went wrong on ScanR production"}' ${{ secrets.SLACK_WEBHOOK }}
