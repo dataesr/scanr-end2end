@@ -9,7 +9,7 @@ on:
 
 jobs:
   cypress-run:
-    runs-on: ubuntu-16.04
+    runs-on: ubuntu-latest
     name: E2E on Firefox
     steps:
       - name: Checkout
